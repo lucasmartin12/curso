@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300;1,400&display=swap');
+
+/*selector universal reset*/
+*{
+    color: wheat;
+    margin: 10;
+    padding:0 ;
+}
+html{
+    front-size:62.5%
+}
+body{
+    background: rgb(10,8,71);
+    background: linear-gradient(90deg, rgba(10,8,71,1) 50%, rgba(9,0,84,0) 100%);
+    padding-right:  20px; 
+    padding-left: 50px;
+    padding-top: 30px;    
+    padding-bottom: 5px;
+}
+h1{
+    color: brown;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    min-width: 300px;
+}
+.text center{
+    text-align: center;
+}
+a{
+    color: aqua;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background: rgb(254,0,0);
+    background: linear-gradient(90deg, rgba(254,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    background-color: blue;   
+    border: 2px solid black;
+    justify-content: center;
+}
+.flex-container div{
+    background-color: blue;
+    flex-wrap: wrap;
+}
+.imagen{
+     width: 700px;
+
+}
+.linear-gradient{
+    background: linear-gradient(to left,black,violet);
+}
+.transform:hover{
+transform: translate(10px);
+cursor: pointer;
+}
+@keyframes texto{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+nav{
+    animation-name: texto;
+    animation-duration: 2s;
+}
+.scale:hover{
+    transform: scaley(1.3);
+}
+@media screen and (min-width: 768px;){
+    body{
+        background-color: black;
+    }
+}
